@@ -104,7 +104,7 @@ export default function MultiStep() {
     const [step, setStep] = useState(1);
 
     return (
-        <div className="flex min-h-full flex-1 flex-col items-center justify-center bg-slate-900/90 p-4 backdrop-blur-xl sm:aspect-[4/3] md:aspect-[2/1]">
+        <div className="flex min-h-full flex-1 flex-col items-center justify-start bg-slate-900/90 p-4 backdrop-blur-xl sm:aspect-[4/3] md:aspect-[2/1]">
             <div className="mx-auto w-full max-w-md rounded-lg bg-white shadow-xl">
                 <div className="flex justify-between rounded p-8">
                     <Step step={1} currentStep={step} />

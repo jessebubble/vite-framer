@@ -5,6 +5,7 @@ import AnimatedTabs from './components/AnimatedTabs'
 import AnimatedSwitch from './components/AnimatedSwitch'
 import GradientBorder from './components/GradientBorder'
 import MultiStep from './components/MultiStep'
+import StaggeredCheckbox from './components/StaggeredCheckbox'
 
 const tabArray = [
     { name: 'Spotlight Gradient',
@@ -43,6 +44,15 @@ const tabArray = [
             },
         ],
     },
+    { name: 'Staggered Checkbox',
+        summary: [
+            {
+                name: 'Staggered Checkbox', 
+                description: 'Staggered Checkbox',
+                component: <StaggeredCheckbox />
+            }
+        ]
+    },
     { name: 'Multi-Step Wizard',
         summary: [
             {
@@ -67,7 +77,7 @@ export default function App() {
     return (
         <div className="bg-slate-900 py-24">
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div className="relative isolate overflow-hidden bg-white/10 py-20 px-6 sm:px-10 rounded-lg">
+                <div className="relative isolate overflow-hidden bg-slate-900 py-20 px-6 sm:px-10 rounded-lg">
                     <div className="mx-auto max-w-2xl md:max-w-none gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-10 md:mb-10">
                         <div className="lg:row-start-2">
                             <h2 className="text-3xl text-center font-bold tracking-tight text-logopink sm:text-4xl">
@@ -107,16 +117,6 @@ export default function App() {
                             </Tab.Panels>
                         </Tab.Group>
                     </div>
-                    <svg className="pointer-events-none absolute top-1/2 left-80 -z-10 h-[42.375rem] -translate-y-full transform-gpu blur-3xl lg:top-1/2 lg:bottom-[-10rem] -lg:translate-y-full" viewBox="0 0 1155 678" fill="none" >
-                        <path fill="url(#c0458c57-1330-459f-9d5c-f0d75c210466)" fillOpacity=".25" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
-                        <defs>
-                        <linearGradient
-                            id="c0458c57-1330-459f-9d5c-f0d75c210466" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse" >
-                            <stop stopColor="#E11887" />
-                            <stop offset={1} stopColor="#FFF" />
-                        </linearGradient>
-                        </defs>
-                    </svg>
                 </div>
             </div>
         </div>
