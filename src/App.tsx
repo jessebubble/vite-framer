@@ -6,6 +6,8 @@ import AnimatedSwitch from './components/AnimatedSwitch'
 import GradientBorder from './components/GradientBorder'
 import MultiStep from './components/MultiStep'
 import StaggeredCheckbox from './components/StaggeredCheckbox'
+import AnimatedCarousel from './components/AnimatedCarousel'
+import FixedHeader from './components/FixedHeader'
 
 const tabArray = [
     { name: 'Spotlight Gradient',
@@ -32,6 +34,15 @@ const tabArray = [
                 name: 'Magnified Dock',
                 description: 'Magnified Dock',
                 component: <MagnifiedDock /> 
+            },
+        ],
+    },
+    { name: 'Animated Carousel',
+        summary: [
+            {
+                name: 'Animated Carousel',
+                description: 'Animated Carousel',
+                component: <AnimatedCarousel />
             },
         ],
     },
@@ -74,7 +85,10 @@ const tabArray = [
 ]
 
 export default function App() {
+
     return (
+        <>
+        <FixedHeader />
         <div className="bg-slate-900 py-24">
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="relative isolate overflow-hidden bg-slate-900 py-20 px-6 sm:px-10 rounded-lg">
@@ -120,5 +134,6 @@ export default function App() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
