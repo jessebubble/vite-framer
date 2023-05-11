@@ -5,15 +5,11 @@ import AnimatedSwitch from './components/AnimatedSwitch'
 import GradientBorder from './components/GradientBorder'
 import MultiStep from './components/MultiStep'
 import StaggeredCheckbox from './components/StaggeredCheckbox'
-import AnimatedCarousel from './components/AnimatedCarousel'
-import FixedHeader from './components/FixedHeader'
-
 
 export default function App() { 
 
     return (
         <> 
-        <FixedHeader />
         <section className="isolate overflow-hidden bg-white px-6 lg:px-8">
             <div className="relative mx-auto max-w-2xl py-24 sm:py-32 lg:max-w-4xl">
                 <figure className="grid grid-cols-1 items-center gap-x-6 gap-y-8 lg:gap-x-10">
@@ -52,7 +48,6 @@ export default function App() {
         <GradientBorder />
         <MultiStep />
         <StaggeredCheckbox />
-        <AnimatedCarousel />
         </>
     )
 }
