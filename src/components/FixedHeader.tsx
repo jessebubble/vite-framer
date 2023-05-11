@@ -1,4 +1,4 @@
-import {
+/* import {
     motion,
     useMotionTemplate,
     useMotionValue,
@@ -70,4 +70,4 @@ import {
         </motion.header>
       </div>
     );
-  }
+  } */
