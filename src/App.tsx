@@ -45,9 +45,9 @@ export default function App() {
         <MagnifiedDock />
         <AnimatedTabs />
         <AnimatedSwitch />
-        <GradientBorder />
         <MultiStep />
         <StaggeredCheckbox />
+        <GradientBorder />
         </>
     )
 }

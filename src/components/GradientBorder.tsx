@@ -3,7 +3,7 @@ import { CSSProperties } from "react";
 export default function GradientBorder() {
 
     return (
-        <div className="bg-black py-24 ">
+        <div className="bg-black py-24 sm:py-32">
         <div
             style={
                 {
