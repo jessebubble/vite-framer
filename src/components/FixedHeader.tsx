@@ -63,8 +63,8 @@ import {
           className="fixed inset-x-0 top-0 z-10 flex items-center shadow-sm backdrop-blur "
         >
           <div className="flex items-center justify-between w-full max-w-3xl px-4 mx-auto">
-            <a href="/" className="font-semibold leading-none text-stone-900">
-               Framer + Motion
+            <a href="/" className="font-semibold leading-none text-logopink">
+               Hola Framer Motion!
             </a>
           </div>
         </motion.header>

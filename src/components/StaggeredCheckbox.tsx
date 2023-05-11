@@ -82,9 +82,9 @@ export default function StaggeredCheckbox() {
     }
 
     return (
-        <div className="flex min-h-full flex-col items-center justify-center">
-            <div className="flex w-full max-w-sm flex-col rounded bg-gray-100 px-3 py-4 shadow-xl">
-                <p className="ml-2 flex items-center text-lg font-semibold text-gray-700">
+        <div className="flex min-h-full flex-col items-center justify-center py-24 sm:py-32">
+            <div className="flex w-full max-w-sm flex-col rounded-xl bg-gray-900 px-3 py-4 shadow-xl">
+                <p className="ml-2 flex items-center text-lg font-semibold text-gray-300">
                     <ListBulletIcon className="mr-3 h-5 w-5" />
                     Checklist
                 </p>
@@ -99,7 +99,7 @@ export default function StaggeredCheckbox() {
                             className={`group flex w-full cursor-pointer select-none items-center rounded p-2 text-sm font-medium transition-colors duration-300 checked:text-gray-300 hover:bg-gray-200 ${
                                 item.checked
                                 ? "text-gray-400 line-through"
-                                : "text-gray-800"
+                                : "text-gray-300"
                             }`}
                         >
                         <input

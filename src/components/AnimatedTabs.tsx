@@ -13,7 +13,7 @@ export default function AnimatedTabs() {
     const [activeTab, setActiveTab] = useState(tabs[0].id);
 
     return (
-        <div className="flex space-x-1 bg-slate-900 rounded-2xl p-20 items-center justify-center">
+        <div className="flex space-x-1 bg-black items-center justify-center py-24 sm:py-32">
             {tabs.map((tab) => (
                 <button
                     key={tab.id}

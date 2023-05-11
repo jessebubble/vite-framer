@@ -14,7 +14,7 @@ export default function MagnifiedDock() {
         <motion.div
             onMouseMove={(e) => mouseX.set(e.pageX)}
             onMouseLeave={() => mouseX.set(Infinity)}
-            className="mx-auto flex h-16 items-end  justify-center gap-4 rounded-2xl bg-gray-900 px-4 pb-3"
+            className="bg-white flex items-center justify-center gap-2 md:gap-4 mx-auto max-w-2xl py-24 sm:py-32 lg:max-w-7xl"
         >
             {[...Array(8).keys()].map((i) => (
             <AppIcon mouseX={mouseX} key={i} />

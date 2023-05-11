@@ -17,33 +17,54 @@ export default function SpotlightGradient() {
     }
 
     return (
-        <>        
-        <div 
-            className="group relative mx-auto max-w-7xl rounded-xl flex flex-col items-center justify-center px-12 py-24 bg-slate-900"
-            onMouseMove={handleMouseMove}
-            >
-            <motion.div
-                className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
-                style={{
-                background: useMotionTemplate`
-                    radial-gradient(
-                    650px circle at ${mouseX}px ${mouseY}px,
-                    rgba(14, 165, 233, 0.15),
-                    transparent 80%
-                    )
-                `,
-                }}
-            />
-            <div className="">
-                <h1 className="text-4xl font-bold text-center text-logopink">
-                    <span className="text-indigo-600">Radial Gradient</span>
-                </h1>
-                <p className="mt-4 text-lg text-center text-gray-300 max-w-md">
-                    A radial gradient that follows the mouse cursor as it moves across the card.
-                    Uses Framer Motion to update the mouse coordinates and re-render the gradient's position outside of React's render cycle.
-                </p>
+        <>      
+        <section className="isolate overflow-hidden bg-black px-6 lg:px-8">
+            <div 
+                className="group relative mx-auto max-w-2xl py-24 sm:py-32 lg:max-w-4xl"
+                onMouseMove={handleMouseMove}
+                >
+                <motion.div
+                    className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
+                    style={{
+                        background: useMotionTemplate`
+                        radial-gradient(
+                        650px circle at ${mouseX}px ${mouseY}px,
+                        rgba(14, 165, 233, 0.15),
+                        transparent 80%
+                        )
+                    `,
+                    }}
+                />
+                <figure className="grid grid-cols-1 items-center gap-x-6 gap-y-8 lg:gap-x-10">
+                    <div className="relative col-span-2 lg:col-start-1 lg:row-start-2">
+                        <blockquote className="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
+                            <p>
+                                In this <span className="text-indigo-500">Radial Gradient</span> example, we're using framer motion and the clients mouse and finger coordinates to create this effect
+                                <span className="block text-base text-gray-400 font-normal mt-2">
+                                Radial gradients can be used to simulate lighting effects, create depth, or simply add aesthetic appeal to a design. 
+                                </span>
+                                
+                            </p>
+                        </blockquote>
+                    </div>
+                    <div className="col-end-1 w-16 lg:row-span-4 lg:w-72">
+                        <img
+                        className="rounded-xl bg-indigo-50 lg:rounded-3xl"
+                        src="https://cdn.sanity.io/images/etrj839y/production/ff75e3e85a6257e83da8f130f1cdaec58f1195f0-1024x1024.jpg"
+                        alt="alone in spooky room"
+                        />
+                    </div>
+                    <figcaption className="text-base lg:col-start-1 lg:row-start-3">
+                        <div className="font-semibold text-white">Radial Gradient Example</div>
+                        <div className="mt-1 text-indigo-500">
+                            <p>
+                                Move your mouse or finger across the card
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
             </div>
-        </div>
+        </section>
         </>
     )
 }

@@ -10,7 +10,7 @@ export default function AnimatedCarousel() {
   const direction = count > prev ? 1 : -1;
 
   return (
-    <div className="flex justify-center">
+    <div className="flex items-center justify-center bg-black py-24 sm:py-32">
       <div className="mt-12 w-full max-w-lg text-white">
         <div className="flex justify-between px-4">
           <button onClick={() => setCount(count - 1)}>
@@ -24,7 +24,7 @@ export default function AnimatedCarousel() {
           <div className="aspect-square w-2/5">
             <div
               ref={ref}
-              className="relative flex h-full items-center justify-center overflow-hidden bg-slate-900"
+              className="relative flex h-full items-center justify-center overflow-hidden bg-white/10 rounded"
             >
               <AnimatePresence custom={{ direction, width }}>
                 <motion.div
@@ -34,7 +34,7 @@ export default function AnimatedCarousel() {
                   animate="center"
                   exit="exit"
                   custom={{ direction, width }}
-                  className={`absolute flex h-2/3 w-2/3 items-center justify-center text-3xl font-bold ${
+                  className={`absolute flex h-2/3 w-2/3 items-center justify-center rounded text-3xl font-bold ${
                     colors[Math.abs(count) % 4]
                   }`}
                 >
