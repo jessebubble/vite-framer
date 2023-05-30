@@ -50,7 +50,7 @@ export default function SpotlightGradient() {
                     <div className="col-end-1 w-16 lg:row-span-4 lg:w-72">
                         <img
                         className="rounded-xl bg-indigo-50 lg:rounded-3xl"
-                        src="https://cdn.sanity.io/images/etrj839y/production/ff75e3e85a6257e83da8f130f1cdaec58f1195f0-1024x1024.jpg"
+                        src="https://a-us.storyblok.com/f/1014535/1024x1024/89873ebeca/framer-spotlight-hero2.PNG"
                         alt="alone in spooky room"
                         />
                     </div>
